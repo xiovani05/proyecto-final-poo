@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Investigación Académica: Programación Orientada a Objetos</title>
+  <style>
+    @import url('https://googleapis.com');
+ 
+    :root {
+      --primary: #0d9488; 
+      --dark: #1e293b;
+      --light: #f8fafc;
+      --border: #cbd5e1;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      color: var(--dark);
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      font-size: 15px;
+    }
+    header {
+      background-color: var(--dark);
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    header h1 {
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin: 0;
+    }
+    nav {
+      background-color: var(--primary);
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      padding: 1rem 1.5rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      background-color: #0b7a70;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+    }
+    .card {
+      background: var(--light);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    h2 {
+      color: var(--primary);
+      border-bottom: 2px solid var(--primary);
+      padding-bottom: 0.5rem;
+      font-weight: 700;
+    }
+    h3 {
+      color: var(--dark);
+      margin-top: 1.5rem;
+      font-weight: 500;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .element-box {
+      background: white;
+      padding: 1rem;
+      border-left: 4px solid var(--primary);
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: var(--dark);
+      color: white;
+      margin-top: 4rem;
+    }
+  </style>
+</head>
+<body>
+ 
+  <header>
+    <h1>Programación Orientada a Objetos</h1>
+    <p>Sitio de Investigación Académica e Integración de Conceptos</p>
+  </header>
+ 
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#tema1">Tema 1</a>
+    <a href="#tema2">Tema 2</a>
+    <a href="#tema3">Tema 3</a>
+    <a href="#tema4">Tema 4</a>
+    <a href="#tema5">Tema 5</a>
+    <a href="#tema6">Tema 6</a>
+    <a href="#bibliografia">Bibliografía</a>
+  </nav>
+ 
+  <div class="container">
+ 
+    <!-- SECCIÓN DE INICIO -->
+    <section id="inicio" class="card">
+      <h2>Información del Proyecto</h2>
+      <p><strong>Instrucciones cumplidas:</strong> Investigación correspondiente a cada punto del temario oficial con ejemplos prácticos, esquemas, costos y autores de casos reales.</p>
+      <p><strong>Integrantes del Equipo (Máximo 4 personas):</strong></p>
+      <ul>
+        <li>Integrante 1 - [Tu Nombre]</li>
+        <li>Integrante 2 - [Nombre]</li>
+        <li>Integrante 3 - [Nombre]</li>
+        <li>Integrante 4 - [Nombre]</li>
+      </ul>
+    </section>
+ 
+    <!-- TEMA 1 -->
+    <section id="tema1" class="card">
+      <h2>1. Introducción al paradigma de la POO</h2>
+      <h3>1.1 Elementos del modelo de objetos</h3>
+      <div class="grid">
+        <div class="element-box"><strong>Clases:</strong> Moldes o plantillas abstractas que definen atributos y métodos.</div>
+        <div class="element-box"><strong>Objetos:</strong> Instancias concretas de una clase con estado y comportamiento propio.</div>
+        <div class="element-box"><strong>Abstracción:</strong> Aislamiento de características esenciales omitiendo detalles complejos.</div>
+        <div class="element-box"><strong>Modularidad:</strong> Subdivisión del software en partes independientes y manejables.</div>
+        <div class="element-box"><strong>Encapsulamiento:</strong> Ocultamiento de datos internos accesibles solo mediante interfaces públicas.</div>
+        <div class="element-box"><strong>Herencia:</strong> Mecanismo por el cual una clase hija adquiere propiedades de una clase padre.</div>
+        <div class="element-box"><strong>Polimorfismo:</strong> Capacidad de responder al mismo llamado de formas distintas según la naturaleza del objeto.</div>
+      </div>
+      <h3>1.2 Lenguaje de modelado unificado: diagrama de clases</h3>
+      <p>UML es un estándar visual para diseñar sistemas. Una clase se divide en: Superior (Nombre), Central (Atributos) e Inferior (Métodos).</p>
+      <p>Visibilidad: <code>+</code> Público, <code>-</code> Privado, <code>#</code> Protegido.</p>
+    </section>
+ 
+    <!-- TEMA 2 -->
+    <section id="tema2" class="card">
+      <h2>2. Clases y Objetos</h2>
+      <h3>2.1 Declaración de clases: atributos, métodos, encapsulamiento</h3>
+      <div class="grid">
+        <div class="element-box"><strong>Atributos:</strong> Variables que definen las características del objeto.</div>
+        <div class="element-box"><strong>Métodos:</strong> Funciones que representan las acciones del objeto.</div>
+        <div class="element-box"><strong>Encapsulamiento:</strong> Restricción de acceso directo a los atributos usando modificadores.</div>
+      </div>
+      <h3>2.2 Instanciación de una clase</h3>
+      <p>Proceso de crear un objeto en memoria a partir de una clase mediante la palabra clave <code>new</code>.</p>
+      <h3>2.3 Referencia al objeto actual</h3>
+      <p>Permite a los métodos referirse al objeto mismo usando palabras como <code>this</code> o <code>self</code>.</p>
+      <h3>2.4 Métodos: declaración, mensajes, paso de parámetros, retorno</h3>
+      <p>Involucra la definición del método, la llamada (mensaje), los argumentos enviados y el resultado devuelto (return).</p>
+      <h3>2.5 Constructores y destructores: declaración, uso y aplicaciones</h3>
+      <p>Los constructores inicializan el objeto al crearse. Los destructores liberan los recursos asignados en memoria.</p>
+      <h3>2.6 Sobrecarga de métodos</h3>
+      <p>Definir varios métodos con el mismo nombre pero con diferentes parámetros.</p>
+      <h3>2.7 Sobrecarga de operadores</h3>
+      <p>Redefinir el comportamiento de operadores estándar (+, -, ==) para objetos personalizados, dividiéndose en unarios y binarios.</p>
+    </section>
+ 
+    <!-- TEMA 3 -->
+    <section id="tema3" class="card">
+      <h2>3. Herencia</h2>
+      <h3>3.1 Definición: clase base, clase derivada</h3>
+      <div class="grid">
+        <div class="element-box"><strong>Clase Base:</strong> Clase genérica original con atributos y métodos comunes.</div>
+        <div class="element-box"><strong>Clase Derivada:</strong> Nueva clase que hereda el comportamiento y añade rasgos específicos.</div>
+      </div>
+      <h3>3.2 Classification: herencia simple, herencia múltiple</h3>
+      <p>La herencia simple se da cuando se hereda de un solo padre. La múltiple hereda de dos o más clases bases simultáneamente.</p>
+      <h3>3.3 Reutilización de miembros heredados</h3>
+      <p>Las clases hijas acceden automáticamente al código de la clase padre sin necesidad de reescribirlo.</p>
+      <h3>3.4 Referencia al objeto de la clase base</h3>
+      <p>Uso de palabras clave como <code>super</code> o <code>base</code> para invocar constructores o métodos heredados.</p>
+      <h3>3.5 Constructores y destructores en clases derivadas</h3>
+      <p>Primero se ejecuta el constructor de la clase base y luego el de la clase derivada. Al destruir el objeto, el orden es inverso.</p>
+      <h3>3.6 Redefinición de métodos en clases derivadas (Overriding)</h3>
+      <p>Capacidad de una clase hija de reescribir e implementar un método que ya existe en la clase padre.</p>
+    </section>
+ 
+    <!-- TEMA 4 -->
+    <section id="tema4" class="card">
+      <h2>4. Polimorfismo</h2>
+      <h3>4.1 Definición</h3>
+      <p>Permite tratar a múltiples objetos de clases derivadas como si fueran de la clase base común, ejecutando la acción que corresponda a cada uno.</p>
+      <h3>4.2 Clases abstractas: definición, métodos abstractos, implementación y modelado</h3>
+      <p>Clases que no se pueden instanciar y sirven de guía. Los métodos abstractos no tienen código y obligan a las clases hijas a implementarlos.</p>
+      <h3>4.3 Interfaces: definición, implementación de interfaces, herencia de interfaces</h3>
+      <p>Contratos abstractos que definen qué debe hacer una clase sin explicar el cómo, permitiendo simular herencia múltiple.</p>
+      <h3>4.4 Variables polimórficas (plantillas): definición, uso y aplicaciones</h3>
+      <p>Variables de tipo clase base que pueden almacenar objetos de cualquiera de sus clases hijas en tiempo de ejecución.</p>
+      <h3>4.5 Reutilización de código</h3>
+      <p>Permite diseñar sistemas genéricos y scalables que acepten nuevas clases futuras sin modificar el código actual.</p>
+    </section>
+ 
+    <!-- TEMA 5 -->
+    <section id="tema5" class="card">
+      <h2>5. Excepciones</h2>
+      <h3>5.1 Definición</h3>
+      <p>Eventos u objetos que se generan cuando ocurre un error durante la ejecución, interrumpiendo el flujo normal del sistema.</p>
+      <h3>5.2 Tipos de excepciones</h3>
+      <p>Verificadas (Checked): el compilador obliga a manejarlas antes de ejecutar. No verificadas (Runtime): errores lógicos en ejecución.</p>
+      <h3>5.3 Propagación de excepciones</h3>
+      <p>Si un error no se controla en un método, viaja hacia arriba en la pila de llamadas buscando un bloque que lo resuelva.</p>
+      <h3>5.4 Gestión de excepciones: manejo, lanzamiento</h3>
+      <p>Controlado mediante los bloques estructurados: <code>try</code> (prueba), <code>catch</code> (captura) y <code>throw</code> (lanzamiento manual).</p>
+      <h3>5.5 Creación y manejo de excepciones definidas por el usuario</h3>
+ 
