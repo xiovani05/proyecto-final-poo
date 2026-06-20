@@ -122,10 +122,9 @@
       <p><strong>Instrucciones cumplidas:</strong> Investigación correspondiente a cada punto del temario oficial con ejemplos prácticos, esquemas, costos y autores de casos reales.</p>
       <p><strong>Integrantes del Equipo (Máximo 4 personas):</strong></p>
       <ul>
-        <li>Integrante 1 - [Tu Nombre]</li>
-        <li>Integrante 2 - [Nombre]</li>
-        <li>Integrante 3 - [Nombre]</li>
-        <li>Integrante 4 - [Nombre]</li>
+        <li>Integrante 1 - Calleja Alpizar Mariana Jimena</li>
+        <li>Integrante 2 - Vazquez Guzman Yovani</li>
+        
       </ul>
     </section>
  
@@ -217,4 +216,178 @@
       <h3>5.4 Gestión de excepciones: manejo, lanzamiento</h3>
       <p>Controlado mediante los bloques estructurados: <code>try</code> (prueba), <code>catch</code> (captura) y <code>throw</code> (lanzamiento manual).</p>
       <h3>5.5 Creación y manejo de excepciones definidas por el usuario</h3>
+
+
+       <!-- TEMA 6: FLUJOS Y ARCHIVOS -->
+ <section id="tema6" class="card">
+ <h2>6. Flujos y Archivos</h2>
+ <p>Mecanismos que permiten a una aplicación interactuar con fuentes de almacenamiento externas, logrando que los datos sobrevivan a la ejecución del programa mediante la persistencia en disco duro u otros medios.</p>
+ 
+ <h3>6.1 Definición</h3>
+ <p>Un <strong>Flujo (Stream)</strong> es una abstracción conceptual que representa una secuencia ordenada de datos con un origen (fuente de lectura) y un destino (sumidero de escritura). Permite transferir información de manera continua, byte por byte o carácter por carácter, sin necesidad de cargar todo el archivo en la memoria RAM al mismo tiempo.</p>
+ 
+ <h3>6.2 Clasificación: Archivos de texto y binarios</h3>
+ <div class="grid">
+ <div class="element-box">
+ <strong>Archivos de Texto:</strong> Almacenan datos estructurados como secuencias de caracteres legibles por humanos (ej. extensiones <code>.txt</code>, <code>.csv</code>, <code>.json</code>). Se codifican utilizando estándares de caracteres como UTF-8 o ASCII.
+ </div>
+ <div class="element-box">
+ <strong>Archivos Binarios:</strong> Almacenan información en formato binario puro (secuencias de ceros y unos) optimizada para la computadora (ej. imágenes <code>.png</code>, ejecutables <code>.exe</code>, o bases de datos compactas). No son legibles de forma directa mediante un editor de texto convencional.
+ </div>
+ </div>
+ 
+ <h3>6.3 Operaciones básicas y tipos de acceso</h3>
+ <p>Cualquier interacción con el sistema de archivos sigue un ciclo de vida estrictamente regulado por el sistema operativo:</p>
+ <ul>
+ <li><strong>Operaciones Básicas:</strong>
+ <ul>
+ <li><code>Abrir (Open):</code> Establece un canal de comunicación seguro y verifica los permisos del archivo.</li>
+ <li><code>Leer (Read):</code> Extrae información desde el soporte físico hacia variables dentro del programa.</li>
+ <li><code>Escribir (Write):</code> Guarda datos temporales de la aplicación en el almacenamiento permanente.</li>
+ <li><code>Cerrar (Close):</code> Libera los recursos del sistema operativo asignados al archivo (vital para evitar archivos corruptos o bloqueados).</li>
+ </ul>
+ </li>
+ <li><strong>Tipos de Acceso:</strong>
+ <ul>
+ <li><em>Acceso Secuencial:</em> Los datos se leen o escriben en orden estricto desde el principio hasta el final del archivo. Para llegar al dato 'N', hay que pasar obligatoriamente por los 'N-1' anteriores.</li>
+ <li><em>Acceso Aleatorio (Directo):</em> Permite posicionar el puntero de lectura/escritura en cualquier byte del archivo instantáneamente mediante un índice o posición numérica, ideal para sistemas de archivos de bases de datos.</li>
+ </ul>
+ </li>
+ </ul>
+ 
+ <h3>6.4 Manejo de objetos persistentes</h3>
+ <p>Es la técnica que permite guardar el estado actual de un objeto completo (atributos con sus respectivos valores en un momento dado) directamente en un medio de almacenamiento físico, para poder restaurarlo idénticamente en el futuro.</p>
+ <ul>
+ <li><strong>Serialización:</strong> El proceso de transformar un objeto de la memoria RAM en una secuencia lineal de bytes lista para ser enviada por red o grabada en un archivo físico.</li>
+ <li><strong>Deserialización:</strong> El proceso inverso, donde se toma una secuencia de bytes almacenada en disco y se reconstruye fielmente el objeto original con toda su estructura lógica en la memoria de la aplicación.</li>
+ </ul>
+ </section>
+ 
+ <!-- SECCIÓN DE BIBLIOGRAFÍA, COSTOS E HIPERVÍNCULOS -->
+ <section id="bibliografia" class="card">
+ <h2>Bibliografía, Costos y Casos Prácticos</h2>
+ <p>En cumplimiento con las instrucciones de la rúbrica, se desglosan los costos estimados de infraestructura y se anexan un mínimo de 60 hipervínculos de documentación oficial indexados por temas.</p>
+ 
+ <h3>📊 Estimación de Costos de Infraestructura y Desarrollo</h3>
+ <p>Autores de Casos Prácticos: <em>Calleja Alpizar Mariana Jimena & Vazquez Guzman Yovani A (2026). Ingeniería en sistemas computacionales. programacion Orientada a Objetos.</em></p>
+ <table style="width:100%; border-collapse: collapse; margin-bottom: 2rem; background: white;">
+ <thead style="background-color: var(--dark); color: white;">
+ <tr>
+ <th style="padding: 10px; border: 1px solid var(--border); text-align: left;">Concepto / Herramienta</th>
+ <th style="padding: 10px; border: 1px solid var(--border); text-align: left;">Tipo de Licencia</th>
+ <th style="padding: 10px; border: 1px solid var(--border); text-align: left;">Costo Mensual Estimado</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td style="padding: 10px; border: 1px solid var(--border);">Hosting en GitHub Pages (Uso Académico)</td>
+ <td style="padding: 10px; border: 1px solid var(--border);">Gratuito (Open Source)</td>
+ <td style="padding: 10px; border: 1px solid var(--border); font-weight: bold; color: green;">$0.00 USD</td>
+ </tr>
+ <tr>
+ <td style="padding: 10px; border: 1px solid var(--border);">IDE de Desarrollo (VS Code / Eclipse / IntelliJ Community)</td>
+ <td style="padding: 10px; border: 1px solid var(--border);">Gratuito (FOSS)</td>
+ <td style="padding: 10px; border: 1px solid var(--border); font-weight: bold; color: green;">$0.00 USD</td>
+ </tr>
+ <tr>
+ <td style="padding: 10px; border: 1px solid var(--border);">Herramienta de Modelado UML (Draw.io / Lucidchart Academic)</td>
+ <td style="padding: 10px; border: 1px solid var(--border);">Gratuito con registro</td>
+ <td style="padding: 10px; border: 1px solid var(--border); font-weight: bold; color: green;">$0.00 USD</td>
+ </tr>
+ <tr>
+ <td style="padding: 10px; border: 1px solid var(--border);">Dominio Personalizado (Opcional para Google Sites / GitHub)</td>
+ <td style="padding: 10px; border: 1px solid var(--border);">Anual comercial</td>
+ <td style="padding: 10px; border: 1px solid var(--border); font-weight: bold; color: #b95b00;">$1.00 - $1.20 USD</td>
+ </tr>
+ </tbody>
+ </table>
+ 
+ <h3>🔗 Repositorio de Hipervínculos Verificados (Mínimo 60 Enlaces)</h3>
+ <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); font-size: 0.9rem;">
+ 
+ <div class="element-box">
+ <strong>Bloque 1: Introducción y Clases</strong>
+ <ul style="padding-left: 15px; margin: 5px 0;">
+ <li><a href="https://oracle.com" target="_blank">Java OOP Concepts</a></li>
+ <li><a href="https://oracle.com" target="_blank">What is a Class?</a></li>
+ <li><a href="https://oracle.com" target="_blank">What is an Object?</a></li>
+ <li><a href="https://microsoft.com" target="_blank">C# OOP Overview</a></li>
+ <li><a href="https://microsoft.com" target="_blank">C# Classes Guide</a></li>
+ <li><a href="https://microsoft.com" target="_blank">C# Objects Memory</a></li>
+ <li><a href="https://python.org" target="_blank">Python Classes Doc</a></li>
+ <li><a href="https://python.org" target="_blank">Python Data Model</a></li>
+ <li><a href="https://cppreference.com" target="_blank">C++ Class Types</a></li>
+ <li><a href="https://cppreference.com" target="_blank">C++ Object Definition</a></li>
+ </ul>
+ </div>
+ 
+ <div class="element-box">
+ <strong>Bloque 2: Pilares y Encapsulación</strong>
+ <ul style="padding-left: 15px; margin: 5px 0;">
+ <li><a href="https://oracle.com" target="_blank">Java Interfaces</a></li>
+ <li><a href="https://oracle.com" target="_blank">Java Access Control</a></li>
+ <li><a href="https://microsoft.com" target="_blank">C# Access Modifiers</a></li>
+ <li><a href="https://microsoft.com" target="_blank">C# Parameters</a></li>
+ <li><a href="https://python.org#private-variables" target="_blank">Python Private Vars</a></li>
+ <li><a href="https://cppreference.com" target="_blank">C++ Access Specifiers</a></li>
+ <li><a href="https://w3schools.com" target="_blank">W3Schools Encapsulation</a></li>
+ <li><a href="https://geeksforgeeks.org" target="_blank">GeeksforGeeks Encapsulation</a></li>
+ <li><a href="https://tutorialspoint.com" target="_blank">TutorialsPoint Encapsulation</a></li>
+ <li><a href="https://javatpoint.com" target="_blank">JavaTpoint Encapsulation</a></li>
+ </ul>
+ </div>
+ 
+ <div class="element-box">
+ <strong>Bloque 3: Anatomía de Clases</strong>
+ <ul style="padding-left: 15px; margin: 5px 0;">
+ <li><a href="https://oracle.com" target="_blank">Java Constructors</a></li>
+ <li><a href="https://microsoft.com" target="_blank">C# Constructors</a></li>
+ <li><a href="https://microsoft.com" target="_blank">C# Finalizers</a></li>
+ <li><a href="https://cppreference.com" target="_blank">C++ Constructors</a></li>
+ <li><a href="https://cppreference.com" target="_blank">C++ Destructors</a></li>
+ <li><a href="https://python.org#object.__init__" target="_blank">Python __init__</a></li>
+ <li><a href="https://python.org#object.__del__" target="_blank">Python __del__</a></li>
+ <li><a href="https://oracle.com" target="_blank">Java Methods Definition</a></li>
+ <li><a href="https://microsoft.com" target="_blank">C# Methods Guide</a></li>
+ <li><a href="https://cppreference.com" target="_blank">C++ Member Functions</a></li>
+ </ul>
+ </div>
+ 
+ <div class="element-box">
+ <strong>Bloque 4: Herencia Avanzada</strong>
+ <ul style="padding-left: 15px; margin: 5px 0;">
+ <li><a href="https://oracle.com" target="_blank">Java Inheritance</a></li>
+ <li><a href="https://oracle.com" target="_blank">Java Multiple Inheritance</a></li>
+ <li><a href="https://microsoft.cominheritance" target="_blank">C# Inheritance System</a></li>
+ <li><a href="https://cppreference.com" target="_blank">C++ Derived Classes</a></li>
+ <li><a href="https://python.org#inheritance" target="_blank">Python Base Classes</a></li>
+ <li><a href="https://python.org#multiple-inheritance" target="_blank">Python Multiple Inherit</a></li>
+ <li><a href="https://w3schools.com" target="_blank">W3Schools Inheritance</a></li>
+ <li><a href="https://geeksforgeeks.org" target="_blank">GeeksforGeeks Inheritance</a></li>
+ <li><a href="https://tutorialspoint.com" target="_blank">TutorialsPoint Inheritance</a></li>
+ <li><a href="https://javatpoint.com" target="_blank">JavaTpoint Inheritance</a></li>
+ </ul>
+ </div>
+ 
+ <div class="element-box">
+ <strong>Bloque 5: Polimorfismo y Firmas</strong>
+ <ul style="padding-left: 15px; margin: 5px 0;">
+ <li><a href="https://oracle.com" target="_blank">Java Polymorphism</a></li>
+ <li><a href="https://oracle.com" target="_blank">Java Abstract Classes</a></li>
+ <li><a href="https://microsoft.compolymorphism" target="_blank">C# Polymorphism</a></li>
+ <li><a href="https://microsoft.com" target="_blank">C# Abstract Keyword</a></li>
+ <li><a href="https://cppreference.com" target="_blank">C++ Abstract Classes</a></li>
+ <li><a href="https://cppreference.com" target="_blank">C++ Overloading</a></li>
+ <li><a href="https://microsoft.com" target="_blank">C# Operator Overload</a></li>
+ <li><a href="https://python.org#specialnames" target="_blank">Python Operator Overload</a></li>
+ <li><a href="https://w3schools.com" target="_blank">W3Schools Polymorphism</a></li>
+ <li><a href="https://geeksforgeeks.org" target="_blank">GeeksforGeeks Polymorphism</a></li>
+ </ul>
+ </div>
+ 
+ <div class="element-box">
+ <strong>Bloque 6: Manejo Excepciones y Flujos</strong>
+ <ul style="padding-left: 15px; margin: 5px 0;">
+ <li><a href="https://oracle.com" target="_blank">Java Exceptions Tutorial</a></li>
+ 
  
